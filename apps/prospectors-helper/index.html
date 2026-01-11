@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prospector's Helper - Gold Prospecting & Metal Detecting App</title>
-  <meta name="description" content="The ultimate companion app for gold prospectors and metal detectorists. Track locations, log finds, share with friends, and analyze your results.">
+  <meta name="description" content="The ultimate companion app for gold prospectors and metal detectorists. Log gold panning spots & results, view BLM mining claims, works in remote areas.">
   <link rel="stylesheet" href="../../styles.css">
 </head>
-<body>
+<body class="app-prospector">
   <header>
     <div class="container-wide">
       <a href="/" class="logo">Solixar Digital</a>
@@ -19,49 +19,252 @@
     </div>
   </header>
 
-  <section class="hero hero-gold">
-    <h1>Prospector's Helper</h1>
-    <p>The ultimate companion app for gold prospectors and metal detectorists.</p>
+  <!-- Hero Section -->
+  <section class="hero hero-gold hero-app">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>
+          <img src="../../images/icon.png" alt="Prospector's Helper icon" class="app-icon">
+          Prospector's Helper
+        </h1>
+        <p class="tagline">Log gold panning spots & results, view BLM mining claims, works in remote areas.</p>
+        <div class="app-badges">
+          <span class="app-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <span class="badge-text">
+              <span class="badge-small">Download on the</span>
+              <span class="badge-large">App Store</span>
+            </span>
+          </span>
+          <span class="app-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+            <span class="badge-text">
+              <span class="badge-small">GET IT ON</span>
+              <span class="badge-large">Google Play</span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="hero-phones">
+        <img src="../../images/map-markers.png" alt="Map view with markers" class="phone-mockup">
+        <img src="../../images/marker-detail.png" alt="Marker detail view" class="phone-mockup">
+      </div>
+    </div>
   </section>
 
-  <main class="container">
-    <div class="content">
-      <h2>About the App</h2>
-      <p>Prospector's Helper is designed for recreational gold prospectors, metal detectorists, and rockhounds. Whether you're panning for gold, hunting for relics, or searching for gemstones, this app helps you:</p>
+  <!-- Screenshot Showcase -->
+  <section class="screenshot-showcase">
+    <h2>See It In Action</h2>
+    <div class="screenshot-scroll">
+      <img src="../../images/map-markers.png" alt="Map with color-coded markers">
+      <img src="../../images/marker-detail.png" alt="Marker detail with panning results">
+      <img src="../../images/blm-claims.png" alt="BLM mining claims overlay">
+      <img src="../../images/analytics.png" alt="Analytics dashboard">
+      <img src="../../images/gold-prices.png" alt="Live gold prices">
+    </div>
+  </section>
 
-      <ul>
-        <li><strong>Track Locations</strong> - Mark and save your prospecting spots with GPS coordinates</li>
-        <li><strong>Log Finds</strong> - Record panning results, gold weights, and equipment used</li>
-        <li><strong>View Reference Data</strong> - See BLM mining claims and historical mine locations</li>
-        <li><strong>Share with Friends</strong> - Connect with fellow prospectors and share your best spots</li>
-        <li><strong>Analyze Results</strong> - View statistics and track your gold recovery over time</li>
-        <li><strong>Work Offline</strong> - Full functionality even without cell service</li>
-      </ul>
-
-      <h2>Premium Features</h2>
-      <p>Upgrade to Premium for advanced features:</p>
-      <ul>
-        <li>Drop pin markers anywhere on the map</li>
-        <li>Offline map downloads for remote areas</li>
-        <li>Live gold spot prices</li>
-        <li>Offline claims data caching</li>
-        <li>Full resolution photo storage</li>
-        <li>Advanced analytics and exports</li>
-      </ul>
-
-      <h2>Download</h2>
-      <p>Prospector's Helper is available on the App Store and Google Play.</p>
-      <!-- App Store badges would go here -->
-
-      <h2>Links</h2>
-      <ul>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
-        <li><a href="support.html">Support &amp; Contact</a></li>
-        <li><a href="delete-account.html">Delete Account</a></li>
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-content">
+      <h2>Built for Gold Prospectors</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: #666; font-size: 1.1rem;">
+        Prospector's Helper is designed for recreational gold prospectors, metal detectorists, and rockhounds. Whether you're panning for gold, hunting for relics, or searching for gemstones.
+      </p>
+      <ul class="feature-list">
+        <li>
+          <span class="icon">📍</span>
+          <div><strong>Track Locations</strong> Mark and save your prospecting spots with GPS coordinates</div>
+        </li>
+        <li>
+          <span class="icon">⚖️</span>
+          <div><strong>Log Finds</strong> Record panning results, gold weights, and equipment used</div>
+        </li>
+        <li>
+          <span class="icon">🗺️</span>
+          <div><strong>View Reference Data</strong> See BLM mining claims and historical mine locations</div>
+        </li>
+        <li>
+          <span class="icon">👥</span>
+          <div><strong>Share with Friends</strong> Connect with fellow prospectors and share your best spots</div>
+        </li>
+        <li>
+          <span class="icon">📊</span>
+          <div><strong>Analyze Results</strong> View statistics and track your gold recovery over time</div>
+        </li>
+        <li>
+          <span class="icon">📴</span>
+          <div><strong>Work Offline</strong> Full functionality even without cell service</div>
+        </li>
       </ul>
     </div>
-  </main>
+  </section>
+
+  <!-- Feature: Track Your Prospecting -->
+  <section class="feature-section">
+    <div class="feature-grid">
+      <div class="feature-text">
+        <h2>Track Your Prospecting</h2>
+        <p>Log test pan results with color counts and pan sizes. Record mining sessions with gold weight and calculate efficiency ratings. Keep detailed notes and photos for every location you visit.</p>
+      </div>
+      <div class="feature-image">
+        <img src="../../images/marker-detail.png" alt="Marker detail showing panning test results">
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature: BLM Mining Claims -->
+  <section class="feature-section">
+    <div class="feature-grid">
+      <div class="feature-text">
+        <h2>BLM Mining Claims Layer</h2>
+        <p>View active and closed BLM mining claims directly on the map. See claim names, types, and filing dates. Know exactly where you can and cannot prospect before you head out.</p>
+      </div>
+      <div class="feature-image">
+        <img src="../../images/blm-claims.png" alt="Map showing BLM mining claims">
+        <img src="../../images/map-layers.png" alt="Map layers toggle">
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature: Historical Mines -->
+  <section class="feature-section">
+    <div class="feature-grid">
+      <div class="feature-text">
+        <h2>Historical Mines Data</h2>
+        <p>Discover over 80,000 historical mine locations from USGS data. Filter by commodity to find promising areas. Research where gold has been found before to guide your prospecting.</p>
+      </div>
+      <div class="feature-image">
+        <img src="../../images/map-layers.png" alt="Historical mines layer">
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature: Analytics -->
+  <section class="feature-section">
+    <div class="feature-grid">
+      <div class="feature-text">
+        <h2>Powerful Analytics</h2>
+        <p>Track total gold recovered, hours worked, and gold-per-hour efficiency. See estimated value at current spot prices. Understand your most productive locations and techniques.</p>
+      </div>
+      <div class="feature-image">
+        <img src="../../images/analytics.png" alt="Analytics dashboard with gold value">
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature: Gold Prices -->
+  <section class="feature-section">
+    <div class="feature-grid">
+      <div class="feature-text">
+        <h2>Live Gold Prices</h2>
+        <p>Real-time gold spot prices with quick reference values for weighing small finds. Know exactly what your gold is worth at any moment. Track price trends over time.</p>
+      </div>
+      <div class="feature-image">
+        <img src="../../images/gold-prices.png" alt="Live gold spot prices screen">
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature: Stay Organized -->
+  <section class="feature-section">
+    <div class="feature-grid">
+      <div class="feature-text">
+        <h2>Stay Organized</h2>
+        <p>Filter markers by source (yours, shared, public) and category. Search and sort to find any location quickly. Keep your prospecting data organized and accessible.</p>
+      </div>
+      <div class="feature-image">
+        <img src="../../images/filters.png" alt="Filters screen">
+        <img src="../../images/markers-list.png" alt="Markers list view">
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Section -->
+  <section class="premium-section">
+    <div class="premium-content">
+      <h2>Upgrade to Premium</h2>
+      <p class="premium-subtitle">Unlock powerful features to enhance your prospecting experience</p>
+
+      <div class="premium-features">
+        <div class="premium-feature">
+          <div class="feature-icon">🚫</div>
+          <h3>Ad-Free</h3>
+          <p>Enjoy an uninterrupted experience</p>
+        </div>
+        <div class="premium-feature">
+          <div class="feature-icon">🗺️</div>
+          <h3>Offline Maps</h3>
+          <p>Download maps for remote areas</p>
+        </div>
+        <div class="premium-feature">
+          <div class="feature-icon">📍</div>
+          <h3>Drop Pin Anywhere</h3>
+          <p>Place markers at any location</p>
+        </div>
+        <div class="premium-feature">
+          <div class="feature-icon">📸</div>
+          <h3>Full Resolution Photos</h3>
+          <p>Store photos at original quality</p>
+        </div>
+        <div class="premium-feature">
+          <div class="feature-icon">📥</div>
+          <h3>Data Import</h3>
+          <p>Import markers from other sources</p>
+        </div>
+        <div class="premium-feature">
+          <div class="feature-icon">📄</div>
+          <h3>PDF Export</h3>
+          <p>Export your data as PDFs</p>
+        </div>
+      </div>
+
+      <div class="pricing-options">
+        <div class="price-card featured">
+          <div class="price">$9.99</div>
+          <div class="period">per year</div>
+          <div class="trial">7-day free trial</div>
+        </div>
+        <div class="price-card">
+          <div class="price">$1.99</div>
+          <div class="period">per month</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2>Start Prospecting Smarter</h2>
+    <p>Download Prospector's Helper today and take your gold prospecting to the next level.</p>
+    <div class="app-badges">
+      <span class="app-badge">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <span class="badge-text">
+          <span class="badge-small">Download on the</span>
+          <span class="badge-large">App Store</span>
+        </span>
+      </span>
+      <span class="app-badge">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+        <span class="badge-text">
+          <span class="badge-small">GET IT ON</span>
+          <span class="badge-large">Google Play</span>
+        </span>
+      </span>
+    </div>
+  </section>
+
+  <!-- Links Section -->
+  <section class="links-section">
+    <h2>Links</h2>
+    <div class="links-grid">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="support.html">Support & Contact</a>
+      <a href="delete-account.html">Delete Account</a>
+    </div>
+  </section>
 
   <footer>
     <div class="container-wide">

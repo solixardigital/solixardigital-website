@@ -14,6 +14,11 @@
     </div>
   </header>
 
+  <!-- Coming Soon Banner -->
+  <div class="coming-soon-banner">
+    Coming Soon
+  </div>
+
   <!-- Hero Section -->
   <section class="hero hero-gold hero-app">
     <div class="hero-content">
@@ -281,5 +286,45 @@
       </nav>
     </div>
   </footer>
+
+  <!-- Coming Soon Modal -->
+  <div id="coming-soon-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <h2>Coming Soon!</h2>
+      <p>Prospector's Helper is currently in development and will be available on the App Store and Google Play soon.</p>
+      <p>Check back later for updates!</p>
+      <button class="btn btn-primary" onclick="closeModal()">Got it</button>
+    </div>
+  </div>
+
+  <script>
+    // Add click handlers to all app badges
+    document.querySelectorAll('.app-badge').forEach(function(badge) {
+      badge.style.cursor = 'pointer';
+      badge.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('coming-soon-modal').classList.add('active');
+      });
+    });
+
+    function closeModal() {
+      document.getElementById('coming-soon-modal').classList.remove('active');
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('coming-soon-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
 </body>
 </html>
